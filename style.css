@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #242424;
+    color: #fdfdfd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#watchlist-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#watchlist-icon img {
+    width: flex;
+    height: 30px;
+    margin-left: 10px;
+}
+
+#watchlist-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#film-catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.film-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.film-card:hover {
+    background-color: #b9b9b9;
+}
+
+.film-card img {
+    width: 150px;
+    height: 200px;
+}
+
+
+#watchlist {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    margin-top: 5px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+.hidden {
+    display: none;
+}
+
+.watchlist-image-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-direction: column;
+}
+
+.watchlist-image-list li {
+    margin: 5px;
+    width: auto;
+}
+
+.watchlist-image-list li img {
+    width: 50px;
+    height: 75px;
+}
+
+#error-message {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    background-color: #eede02;
+    position:absolute;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cabd00;
+}

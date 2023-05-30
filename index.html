@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catalogo Film</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Catalogo Film</h1>
+    <div id="watchlist-icon" onclick="togglewatchlist()">
+      <img src="images/watchlist-icon.png" alt="Watchlist">
+      <span id="watchlist-count">0</span>
+    </div>
+  </header>
+  
+  <main>
+    <div id="film-catalog">
+        <div class="film-card" onclick="addTowatchlist('Flash')">
+        <img src="images/flash.jpg" alt="The Flash">
+        <h2>The Flash</h2>
+        </div>
+
+        <div class="film-card" onclick="addTowatchlist('mario')">
+        <img src="images/mario.jpg" alt="Super Mario Bros">
+        <h2>Super Mario Bros.</h2>
+        </div>
+
+        <div class="film-card" onclick="addTowatchlist('sirenetta')">
+        <img src="images/sirenetta.jpg" alt="Sirenetta">
+        <h2>La Sirenetta</h2>
+        </div>
+    
+        <div class="film-card" onclick="addTowatchlist('Oppenheimer')">
+        <img src="images/oppenheimer.jpg" alt="Oppenheimer">
+        <h2>Oppenheimer</h2>
+        </div>
+
+        <div class="film-card" onclick="addTowatchlist('IndianaJones')">
+        <img src="images/indianajones.jpg" alt="Indiana Jones">
+        <h2>Indiana Jones</h2>
+        </div>
+        
+        <div class="film-card" onclick="addTowatchlist('dnd')">
+        <img src="images/dnd.jpg" alt="Dungeon & Dragons">
+        <h2>Dungeon & Dragons</h2>
+        </div>
+        
+        <div class="film-card" onclick="addTowatchlist('guardiani')">
+        <img src="images/guardiani.jpg" alt="Guardiani della Galassia">
+        <h2>Guardiani della Galassia</h2>
+        </div>  
+    </div>
+  </main>
+  
+  <div id="watchlist" class="hidden">
+    <h2>Watchlist</h2>
+    <ul id="watchlist-items" class="watchlist-image-list"></ul>
+    <button onclick="clearwatchlist()">Svuota Watchlist</button>
+  </div>
+  
+  <div id="error-message" class="hidden"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
